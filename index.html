@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feliz Aniversário!</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #fce7f3, #fde68a);
+    }
+  </style>
+</head>
+<body class="text-gray-800 min-h-screen p-6">
+  <!-- Música de fundo -->
+<audio id="musica" loop>
+  <source src="agrandefamilia.mp3.mp3" type="audio/mpeg" />
+  Seu navegador não suporta áudio embutido.
+</audio>
+
+<div class="text-center mt-4">
+  <button onclick="document.getElementById('musica').play()"
+    class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2 px-4 rounded-full shadow">
+    ▶️ Tocar música
+  </button>
+</div>
+
+  <!-- Confete -->
+  <canvas id="confetti-canvas" class="fixed top-0 left-0 w-full h-full pointer-events-none z-50"></canvas>
+
+  <div class="max-w-6xl mx-auto relative z-10">
+    <h1 class="text-4xl font-bold text-center mb-6">🎉 Feliz Aniversário, Laís! 🎂</h1>
+    <p class="text-center text-lg mb-10">Uma homenagem de um garoto de programa pra outro 💻❤️</p>
+
+    <!-- Botão de mensagem especial -->
+    <div class="text-center mb-10">
+      <button onclick="document.getElementById('mensagem').classList.toggle('hidden')"
+        class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 px-4 rounded-full shadow">
+        💌 Ver mensagem especial
+      </button>
+      <div id="mensagem" class="mt-4 hidden bg-white p-4 rounded-lg shadow max-w-xl mx-auto">
+        <p class="text-center text-lg"> *ESCREVER AQUI EDUARDO* </p>
+      </div>
+    </div>
+
+    <!-- Galeria de fotos -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+      <div class="bg-white p-4 rounded-xl shadow-md hover:scale-105 transition">
+        <img src="fotos/foto1.jpg.jpg" alt="foto 1" class="rounded-lg mb-2 w-full h-60 object-contain
+" />
+        <p class="text-center">👍</p>
+      </div>
+
+      <div class="bg-white p-4 rounded-xl shadow-md hover:scale-105 transition">
+        <img src="fotos/foto2.jpg.jpg" alt="foto 2" class="rounded-lg mb-2 w-full h-60 object-contain
+" />
+        <p class="text-center">day off👌👌</p>
+      </div>
+
+      <div class="bg-white p-4 rounded-xl shadow-md hover:scale-105 transition">
+        <img src="fotos/foto3.jpg.jpg" alt="foto 3" class="rounded-lg mb-2 w-full h-60 object-contain
+" />
+        <p class="text-center">cozinhando na jacuzzi</p>
+      </div>
+
+      <div class="bg-white p-4 rounded-xl shadow-md hover:scale-105 transition">
+        <img src="fotos/foto4.jpg.jpg" alt="foto 4" class="rounded-lg mb-2 w-full h-60 object-contain
+" />
+        <p class="text-center">sdds terceirão🫶</p>
+      </div>
+
+      <div class="bg-white p-4 rounded-xl shadow-md hover:scale-105 transition">
+        <img src="fotos/foto5.jpg.jpg" alt="foto 5" class="rounded-lg mb-2 w-full h-60 object-contain
+" />
+        <p class="text-center">pizzada pós vôlei</p>
+      </div>
+
+      <div class="bg-white p-4 rounded-xl shadow-md hover:scale-105 transition">
+        <img src="fotos/foto6.jpg.jpg" alt="foto 6" class="rounded-lg mb-2 w-full h-60 object-contain
+" />
+        <p class="text-center">dia do troteKKKKK</p>
+      </div>
+
+      <div class="bg-white p-4 rounded-xl shadow-md hover:scale-105 transition">
+        <img src="fotos/foto7.jpg.jpg" alt="foto 7" class="rounded-lg mb-2 w-full h-60 object-contain
+" />
+        <p class="text-center">Aula da saudade❤️</p>
+      </div>
+
+      <div class="bg-white p-4 rounded-xl shadow-md hover:scale-105 transition">
+        <img src="fotos/foto8.jpg.jpg" alt="foto 8" class="rounded-lg mb-2 w-full h-60 object-contain
+" />
+        <p class="text-center">formatura</p>
+      </div>
+
+      <div class="bg-white p-4 rounded-xl shadow-md hover:scale-105 transition">
+        <img src="fotos/foto9.jpg.jpg" alt="foto 9" class="rounded-lg mb-2 w-full h-60 object-contain
+" />
+        <p class="text-center">jovens e a vovó </p>
+      </div>
+
+      <div class="bg-white p-4 rounded-xl shadow-md hover:scale-105 transition">
+        <img src="fotos/foto10.jpg.jpg" alt="foto 10" class="rounded-lg mb-2 w-full h-60 object-contain
+" />
+        <p class="text-center">uns doido ai</p>
+      </div>
+
+      <div class="bg-white p-4 rounded-xl shadow-md hover:scale-105 transition">
+        <img src="fotos/foto11.jpg.jpg" alt="foto 11" class="rounded-lg mb-2 w-full h-60 object-contain
+" />
+        <p class="text-center">histórias pt1</p>
+      </div>
+
+      <div class="bg-white p-4 rounded-xl shadow-md hover:scale-105 transition">
+        <img src="fotos/foto12.jpg.jpg" alt="foto 12" class="rounded-lg mb-2 w-full h-60 object-contain
+" />
+        <p class="text-center">historias pt2</p>
+      </div>
+
+      <div class="bg-white p-4 rounded-xl shadow-md hover:scale-105 transition">
+        <img src="fotos/foto13.jpg.jpg" alt="foto 13" class="rounded-lg mb-2 w-full h-60 object-contain
+" />
+        <p class="text-center">pescadores e edardo</p>
+      </div>
+
+      <div class="bg-white p-4 rounded-xl shadow-md hover:scale-105 transition">
+        <img src="fotos/foto14.jpg.jpg" alt="foto 14" class="rounded-lg mb-2 w-full h-60 object-contain
+" />
+        <p class="text-center">povin bunito uai</p>
+      </div>
+      
+      <div class="bg-white p-4 rounded-xl shadow-md hover:scale-105 transition">
+        <img src="fotos/foto15.jpg.jpg" alt="foto 15" class="rounded-lg mb-2 w-full h-60 object-contain
+" />
+        <p class="text-center">so vejo o jp nessa foto</p>
+      </div>
+
+      <div class="bg-white p-4 rounded-xl shadow-md hover:scale-105 transition">
+        <img src="fotos/foto16.jpg.jpg" alt="foto 16" class="rounded-lg mb-2 w-full h-60 object-contain
+" />
+        <p class="text-center">Debi e Lóide</p>
+      </div>
+
+    </div>
+
+    <div class="mt-12 text-center">
+      <p class="text-xl font-semibold">Parabéns, Laís! Que seu dia seja tão incrível quanto você(e olha que não é 1º de Abril)! 🎈</p>
+    </div>
+  </div>
+
+  <script src="confetti.js"></script>
+</body>
+</html>
